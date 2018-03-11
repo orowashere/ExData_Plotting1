@@ -18,7 +18,7 @@ d <- filter(d, Date <= "2007-02-02" & Date >= "2007-02-01")
 d <- unite(d, col = "DateTime", Date, Time, sep = " ")
 d$DateTime <- as.POSIXct(d$DateTime)
 
-png(filename = "plot3.png")
+png(filename = "plot4.png")
 par(mfrow=c(2,2))
 plot(
   d$DateTime,  d$Global_active_power,
